@@ -658,8 +658,9 @@ span {
     margin: 1.2rem 0;
     resize: none;
 }
+
 .contact form .input-box input:hover,
-.contact form textarea:hover{
+.contact form textarea:hover {
     box-shadow: 0 0 10px var(--main-color);
 }
 
@@ -731,4 +732,142 @@ span {
     text-align: center;
     font-size: 16px;
     color: white;
+}
+
+@media(max-width:1200px) {
+    html {
+        font-size: 55%;
+    }
+
+    .services-container {
+        padding-bottom: 5rem;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 4rem;
+    }
+
+}
+
+@media(max-width:991px) {
+    header {
+        padding: 1.5rem 3%;
+    }
+
+    section {
+        padding: 8rem 3% 1.5rem;
+    }
+
+    .timeline-itmes::before {
+        left: 7px;
+    }
+
+    .timeline-item:nth-child(even) {
+        padding-right: 0;
+        text-align: left;
+    }
+
+    .timeline-item:nth-child(even),
+    .timeline-item:nth-child(odd) {
+        padding-left: 37px;
+    }
+
+    .timeline-dot {
+        left: 0;
+    }
+
+    .services {
+        padding-bottom: 5rem;
+    }
+
+    .testimonials .wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .contact form {
+        flex-direction: column;
+    }
+
+    .footer {
+        padding: 2rem 3%;
+    }
+}
+
+@media(max-width: 850px) {
+    #menu-bar {
+        display: block;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 50%;
+        padding: 1rem 3%;
+        background: rgba(0, 0, 0, 0.8);
+        backdrop-filter: blur(20px);
+        border-bottom-left-radius: 2rem;
+        border-left: 2px solid var(--main-color);
+        border-bottom: 2px solid var(--main-color);
+        display: none;
+    }
+
+    .navbar.active {
+        display: block;
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 1.5rem;
+        margin: 3rem 0;
+        color: white;
+    }
+
+    .home {
+        flex-direction: column-reverse;
+        margin: 5rem 4rem;
+    }
+
+    .home-content h3 {
+        font-size: 2rem;
+    }
+
+    .home-content h1 {
+        font-size: 8rem;
+        margin-top: 3rem;
+    }
+
+    .home-content p {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .home-image img {
+        width: 56vw;
+        height: 56vw;
+    }
+
+    .services-container h2 {
+        margin-bottom: 3rem;
+    }
+
+    .services-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .timeline-item:nth-child(odd) {
+        padding-right: 30px;
+        text-align: left;
+    }
+
+    .service-info p {
+        font-size: 1.5rem;
+        margin-top: 1.2rem;
+    }
+
+    .home-content h1 {
+        font-size: 7rem;
+    }
+
+    .layer i {
+        font-size: 1.7rem;
+    }
 }
