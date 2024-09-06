@@ -871,3 +871,8 @@ span {
         font-size: 1.7rem;
     }
 }
+@media(max-width:408px){
+    .social-icon{
+        display: none;
+    }
+}
